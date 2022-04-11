@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+}
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 1vh;
+}
+.header::before{
+  content: "";
+  background: url(/public/images/nits.jpg);
+  background-size: cover;
+  position:absolute;
+    top:0px;
+    left:0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  z-index: 100;
+}
+.nav-bar.moved {
+  background-color: rgba(0, 0, 0, 0.321);
+  backdrop-filter: blur(2rem);
+}
+.logo {
+  position: relative;
+  width: 5rem;
+  justify-self: left;
+  padding-left: 2%;
+}
+.nit-logo {
+  position: relative;
+  width: 100%;
+}
+.links {
+  position: relative;
+  display: flex;
+  width: 93%;
+  justify-self: flex-end;
+  justify-content: space-evenly;
+}
+.nav-btn-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: 4%;
+  width: fit-content;
+}
+.nav-btn {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.nav-btn:hover {
+  color: #ff004d;
+}
+.papers-btn {
+  color: #ff004d;
+}
+.heading {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin-top: 15%;
+}
+.date {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 1%;
+}
+.red-text {
+  color: #de1b1b;
+}
+.red-underline-text {
+  color: #de1b1b;
+  text-decoration: underline;
+}
+.organised-by {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-top: 3%;
+}
+@keyframes moveBannerUp {
+  0% {
+    transform: translateY(40rem);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+.college-name {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+  -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: hsla(0, 0%, 100%, 0.836);
+  animation: moveBannerUp 1s 0.3s forwards;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 4%;
+  margin-bottom: 13%;
+}
+.main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+.paper-heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+  padding: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.line {
+  position: relative;
+  top: 0.8rem;
+  width: 20rem;
+  border-bottom: 0.25rem solid black;
+}
+.call-des {
+  position: relative;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6rem;
+  color: black;
+}
+.paper-list {
+  padding: 5%;
+  border-radius: 15px;
+  width: 80%;
+  position: relative;
+  color: black;
+  box-shadow: 3px 3px 30px black;
+}
+.list-accordion{
+  position: relative;
+  margin-top:5% ;
+  width: 97%;
+}
+.list-heading {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active,
+.list-heading:hover {
+  background-color: #ccc;
+}
+.list-heading:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.list-items {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .nav-bar {
+    padding: 3%;
+  }
+  .logo {
+    padding-left: 3%;
+    width: 4rem;
+  }
+  .heading {
+    width: 100%;
+    margin-top: 30%;
+    font-size: 1.3rem;
+  }
+  .date {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 4%;
+  }
+  .organised-by {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 6%;
+  }
+  .college-name {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 15%;
+  }
+  .paper-heading {
+    font-size: 1.7rem;
+    text-decoration: underline;
+    margin-top: 5%;
+  }
+  .call-des {
+    width: 90%;
+  }
+  .paper-list {
+    margin-left: 2%;
+    padding-right: 1%;
+  }
+}
