@@ -4,9 +4,15 @@
 .about-heading {
   font-size: 36px;
 }
+.datetime {
+  margin-top: 64px;
+}
 .datetime > div > div{
   display: flex;
   align-items: center;
+}
+.datetime > div > p {
+  margin-left: 29px;
 }
 .datetime > div > div > img {
   height: 20px;

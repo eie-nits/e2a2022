@@ -58,7 +58,7 @@ const Header = () => {
           AUTOMATION
         </div>
         <div className="date">
-          7th-9th Dec, <span className="red-text">2022</span>
+          16<sup>th</sup> - 18<sup>th</sup> Dec, <span className="red-text">2022</span>
         </div>
         <div className="organised-by">
           Organised By <br /> Department Of Electronics And Instrumentation
