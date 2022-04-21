@@ -58,17 +58,17 @@ const Home = () => {
       <h3>Key Note Speakers</h3>
       <p className="mtb-1">Here are our Key note Speakers</p>
       <div className="user-container">
-        {users.map((user, i) => {
-          const props = {
-            img: user.img,
-            name: user.name,
-            bio: user.bio,
-            designation: user.designation
-          }
-          return (
-            <ProfileCard key={i} {...props} />
-          )
-        })}
+      {users.map((user, i) => {
+        const props = {
+          img: user.img,
+          name: user.name,
+          bio: user.bio,
+          designation: user.designation
+        }
+        return (
+          <ProfileCard key={i} {...props} />
+        )
+      })}
       </div>
     </section>
   </>
