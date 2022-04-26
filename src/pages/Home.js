@@ -7,6 +7,7 @@ import time from "../assets/svg/time.svg"
 import meetingRoom from "../assets/svg/meeting-room.svg"
 import ProfileCard from "../components/ProfileCard";
 import users from "../assets/users"
+import CustomHR from "../components/CustomHR";
 
 
 const Home = () => {
@@ -56,7 +57,9 @@ const Home = () => {
 
     <section className="keynote-speakers pt-4">
       <h3>Key Note Speakers</h3>
-      <p className="mtb-1">Here are our Key note Speakers</p>
+      <p className="mt-2 mb-1">Here are our Key note Speakers</p>
+      <CustomHR color="#525E75" />
+      <div className="mb-3" />
       <div className="user-container">
       {users.map((user, i) => {
         const props = {
