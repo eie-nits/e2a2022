@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
 import "../css/callForPapers.css";
-import "../javascript/call-For-Papers"
 import data from "../assets/papers"
 
 const CallForPapers = () => {
@@ -29,12 +28,9 @@ const CallForPapers = () => {
           <div className="line"></div>
         </div>
         <div className="paper-list">
-          <div className="call-des">
-            First International Conference on Emerging Electronics & Automation (E2A) will be organized by Department of Electronics and Instrumentation Engineering, NIT Silchar from 7th - 9th December
-            2022. Prospective authors are requested to submit their original
-            work for publication in the proceedings of E2A. The thrust areas are
-            as follows but not limited to this.
-          </div>
+          <p className="call-des">
+            First International Conference on Emerging Electronics & Automation (E2A) will be organized by Department of Electronics and Instrumentation Engineering, NIT Silchar from 16th - 18th December, 2022. Prospective authors are requested to submit their original work for publication in the proceedings of E2A. The thrust areas are as follows but not limited to this.
+          </p>
           <div className="list-accordion">
             <div className="list-accordion-item">
               {data.map((el, i) => (

@@ -3,7 +3,7 @@ import React from 'react'
 
 const ProfileCard = (props) => {
   return (
-    <figure className="fig-container">
+    <figure className="fig-container m-4">
       <div className="profile-image">
         <img src={props.img} alt={props.name} />
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/Header";
-import "../css/global.css";
 import "../css/home.css"
 import location from "../assets/svg/location.svg"
 import time from "../assets/svg/time.svg"
@@ -18,37 +17,42 @@ const Home = () => {
         <div className="about">
           <h2 className="about-heading mb-1">About The Conference</h2>
           <div className="home-about-content">
-            <p className="text1">Emerging Electronics and Automation (E2A) 2021 is the First annual International Conference organized by the Department of Electronics and Instrumentation Engineering at NIT Silchar, Assam. E2A 2021 is scheduled to be held online for three days between 17th and 19th December 2021.</p>
+            <p className="text1">Emerging Electronics and Automation (E2A) 2022 is the 2<sup>nd</sup> annual International Conference organized by the Department of Electronics and Instrumentation Engineering at NIT Silchar, Assam. E2A 2022 is scheduled to be held online for three days between 16th and 18th December 2022.</p>
 
             <div className="mtb-2" />
 
-            <p className="text1">This conference focuses on trending research and product outcomes in the domain of control and robotics, signal processing, communication systems, sensors and instrumentation, MEMS and VLSI, AI and soft computing. E2A 2021 will pave a common platform for the academicians.</p>
+            <p className="text1">This conference focuses on trending research and product outcomes in the domain of control and robotics, signal processing, communication systems, sensors and instrumentation, MEMS and VLSI, AI and soft computing. E2A 2022 will pave a common platform for the academicians, researchers, industrial players and budding research scholars to discuss their results, innovations, challenges encountered during research and concerns with peers and update their knowledge by interacting with leading researchers of respective domains. It offers a great opportunity for them to network together, present research progress and addresses new challenges. This conference promises to provide knowledge enriching keynote lectures to the participants by world-renowned researchers in the relevant thematic areas.</p>
           </div>
+
+          <div className="mtb-2" />
+
+          <p>We are expecting the peer-reviewed and selected papers of E2A 2022 conference to be published as proceedings with Springer in their prestigious &quot;Lecture Notes in Electrical Engineering&quot; series (<a href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer">https://www.springer.com/series/7818</a>). This series is indexed by EI Compendex and Scopus databases.</p>
+
         </div>
 
         <div className="mlr-2" />
 
         <div className="datetime">
-          <div className="mb-2">
+          <div className="mb-3">
             <div className="mb-1">
               <img src={location} alt="location" />
               <h4 className="ml-1">Venue</h4> 
             </div>
             <p>National Institute Of Technology, Silchar <br />NIT Road, Fakiratilla, Silchar, Assam 788010</p>
           </div>
-          <div className="mb-2">
+          <div className="mb-3">
             <div className="mb-1">
               <img src={time} alt="location" />
               <h4 className="ml-1">Date</h4> 
             </div>
-            <p>21-22, April 2022</p>
+            <p>16<sup>th</sup> - 18<sup>th</sup> Dec</p>
           </div>
-          <div className="mb-2">
+          <div className="mb-3">
             <div className="mb-1">
               <img src={meetingRoom} alt="location" />
               <h4 className="ml-1">Mode</h4>
             </div>
-            <p>Online & Offline</p>
+            <p>Hybrid</p>
           </div>
         </div>
     </section>
@@ -61,17 +65,17 @@ const Home = () => {
       <CustomHR color="#525E75" />
       <div className="mb-3" />
       <div className="user-container">
-      {users.map((user, i) => {
-        const props = {
-          img: user.img,
-          name: user.name,
-          bio: user.bio,
-          designation: user.designation
-        }
-        return (
-          <ProfileCard key={i} {...props} />
-        )
-      })}
+        {users.map((user, i) => {
+          const props = {
+            img: user.img,
+            name: user.name,
+            bio: user.bio,
+            designation: user.designation
+          }
+          return (
+            <ProfileCard key={i} {...props} />
+          )
+        })}
       </div>
     </section>
   </>

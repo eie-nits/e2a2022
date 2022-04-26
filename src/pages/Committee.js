@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/commitee.css';
-import '../javascript/call-For-Papers';
 const Committee = () => {
   return (
     <>

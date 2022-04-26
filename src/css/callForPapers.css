@@ -35,10 +35,13 @@ body::-webkit-scrollbar {
   align-items: center;
   padding: 1%;
   z-index: 100;
+  transition: all 1s ease-in;
 }
 .nav-bar.moved {
-  background-color: rgba(0, 0, 0, 0.321);
+  background-color: #383838;
   backdrop-filter: blur(2rem);
+  transition-property: background-color, backdrop-filter;
+  transition-duration: 1s;
 }
 .logo {
   position: relative;
@@ -203,23 +206,9 @@ body::-webkit-scrollbar {
 .list-heading:hover {
   background-color: #ccc;
 }
-/* .list-heading:after {
-  content: "\002B";
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-} */
 .active:after {
   content: "\2212";
 }
-/* .list-items {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-} */
 .list-items {
   padding: 0 18px;
 }
@@ -268,7 +257,9 @@ body::-webkit-scrollbar {
     margin-top: 5%;
   }
   .call-des {
-    width: 90%;
+    /* width: 90%; */
+    font-family: open-sans;
+    color: #2f3138;
   }
   .paper-list {
     margin-left: 2%;
