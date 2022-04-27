@@ -4,7 +4,7 @@ const Header = () => {
   const [isScrolled, setScrolled] = React.useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 200) setScrolled(true);
+    if (window.scrollY > 150) setScrolled(true);
     else setScrolled(false);
   }
 
