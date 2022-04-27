@@ -168,11 +168,13 @@ body::-webkit-scrollbar {
   border-bottom: 0.25rem solid black;
 }
 .call-des {
+  font-family: OpenSans, sans-serif;
   position: relative;
-  font-size: 1.3rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.6rem;
-  color: black;
+  color: #111;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
 }
 .paper-list {
   padding: 5%;

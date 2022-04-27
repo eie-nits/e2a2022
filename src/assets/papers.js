@@ -12,7 +12,7 @@ export default [
       "Fractional Order Control"]
   },
   {
-    heading: "Image and Video Signal Processing",
+    heading: "Signal and Image Processing",
     items: [
       "Image and Video Signal Processing",
       "Multimedia Applications",
@@ -27,6 +27,24 @@ export default [
       "Active Noise Control",
       "Adapative Signal Processing",
       "Array Signal Processing",
+    ]
+  },
+  {
+    heading: "Communication Systems",
+    items: [
+      "5G & beyond Communication",
+      "IoT & IIoT Communication",
+      "UDN",
+      "MIMO",
+      "D2D",
+      "RF & Microwave",
+      "Antennas",
+      "THz Communication",
+      "Small Cells",
+      "mmWave communication",
+      "Quantum Communication",
+      "Radar Systems",
+      "Optical Communication etc"
     ]
   },
   {
@@ -45,7 +63,7 @@ export default [
     ]
   },
   {
-    heading: "MEMS, Energy Harvesters",
+    heading: "MEMS & VLSI",
     items: [
       "MEMS, Energy Harvesters",
       "Nanotechnology, Renewable Energy, Nano Lithography Processes ",
@@ -57,7 +75,7 @@ export default [
     ]
   },
   {
-    heading: "AI &amp; Soft Computing",
+    heading: "AI & Soft Computing",
     items: [
       "AI and Machine Learning",
       "CAD System",
@@ -72,5 +90,9 @@ export default [
       "Pervasive computing and Ambient Intelligence",
       "Data Visualization."
     ]
+  },
+  {
+    heading: "Energy, Power System and Power Electronics",
+    items: []
   }
 ]

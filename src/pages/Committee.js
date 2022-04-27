@@ -1,5 +1,7 @@
 import React from 'react';
 import '../css/commitee.css';
+import members from "../assets/members"
+
 const Committee = () => {
   return (
     <>
@@ -46,79 +48,46 @@ const Committee = () => {
         <div className='list'>
           <h1>Technical Program Chairs</h1>
           <h3>
-            <strong>Control & Robotics:</strong> Dr. V.C. Pal
+            <strong>Control & Robotics: </strong> Dr. V.C. Pal
           </h3>
           <h3>
-            <strong>Signal Processing:</strong>Dr. Shankar K.
+            <strong>Signal Processing: </strong>Dr. Shankar K.
           </h3>
           <h3>
-            <strong>Communication System:</strong>Dr. Ranjay Hazra
+            <strong>Communication System: </strong>Dr. Ranjay Hazra
           </h3>
           <h3>
-            <strong>MEMS & VLSI:</strong>Dr. S.K. Pandey
+            <strong>MEMS & VLSI: </strong>Dr. S.K. Pandey
           </h3>
           <h3>
-            <strong>AI & Soft Computing:</strong>Dr. Lalu Seban
+            <strong>AI & Soft Computing: </strong>Dr. Lalu Seban
           </h3>
           <h3>
-            <strong>Sensors & Instrumentation:</strong>Dr. R. Dasgupta
+            <strong>Sensors & Instrumentation: </strong>Dr. R. Dasgupta
           </h3>
           <h3>
-            <strong>Energy, Power Systems & Power Electronics:</strong>Dr. M.
+            <strong>Energy, Power Systems & Power Electronics: </strong>Dr. M.
             Khanra
           </h3>
         </div>
 
         <div className='list'>
-          <h1>Technical Program Committee </h1>
-          <table className='CommitteeTable'>
+          <h1 className="mtb-2">Technical Program Committee </h1>
+          <table className='committeeTable mb-4'>
             <tr>
               <th>S. No.</th>
               <th>Name of TPC Member</th>
               <th>Affiliation</th>
             </tr>
-            <tr>
-              <td>1</td>
-              <td>Dr. Shyam Kamal</td>
-              <td>Department of EE, IIT BHU</td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td>Dr. Girraj Sharma</td>
-              <td>JECRC University Jaipur</td>
-            </tr>
-
-            <tr>
-              <td>3</td>
-              <td>Dr. Pankaj Pratap Singh </td>
-              <td>CIT Kokrajhar</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Dr. Arvind Yadav</td>
-              <td>
-                Parul Institute of Engineering and Technology, Vadodora, Gujrat{' '}
-              </td>
-            </tr>
-
-            <tr>
-              <td>5</td>
-              <td>Dr. Gaurav Singh Baghel</td>
-              <td>NIT Silchar</td>
-            </tr>
-
-            <tr>
-              <td>6</td>
-              <td>Dr. Sahaj Saxena</td>
-              <td>Thapar University, Patiala</td>
-            </tr>
-
-            <tr>
-              <td>7</td>
-              <td>Dr. Swati Sondhi</td>
-              <td>Thapar University, Patiala</td>
-            </tr>
+            {
+              members.map((el, i) => (
+                <tr key={i}>
+                  <td>{i+1}</td>
+                  <td>{el.member}</td>
+                  <td>{el.affiliation}</td>
+                </tr>
+              ))
+            }
           </table>
         </div>
       </div>

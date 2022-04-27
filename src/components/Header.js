@@ -5,10 +5,10 @@ const navItems = [
     pathname: "/",
     name: "Home",
   },
-  {
-    pathname: "/about",
-    name: "About",
-  },
+  // {
+  //   pathname: "/about",
+  //   name: "About",
+  // },
   {
     pathname: "/registration",
     name: "Registration",

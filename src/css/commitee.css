@@ -18,19 +18,19 @@
   margin: 0.6rem ;
 }
 
-.CommitteeTable {
+.committeeTable {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
 
 }
 
-.CommitteeTable td, .CommitteeTable th {
+.committeeTable td, .committeeTable th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
 
-.CommitteeTable th {
+.committeeTable th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;

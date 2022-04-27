@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import "../css/home.css"
 import location from "../assets/svg/location.svg"
 import time from "../assets/svg/time.svg"
@@ -16,7 +15,7 @@ const Home = () => {
         <div className="about">
           <h2 className="about-heading mb-1">About The Conference</h2>
           <div className="home-about-content">
-            <p className="text1">Emerging Electronics and Automation (E2A) 2022 is the 2<sup>nd</sup> annual International Conference organized by the Department of Electronics and Instrumentation Engineering at NIT Silchar, Assam. E2A 2022 is scheduled to be held online for three days between 16th and 18th December 2022.</p>
+            <p className="text1">Emerging Electronics and Automation (E2A) 2022 is the 2<sup>nd</sup> annual International Conference organized by the Department of Electronics and Instrumentation Engineering at NIT Silchar, Assam. E2A 2022 is scheduled to be held hybrid between 16th and 18th December 2022.</p>
 
             <div className="mtb-2" />
 
