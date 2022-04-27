@@ -16,8 +16,8 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/callForPapers" exact element={<CallForPapers />} />
-          <Route path="/committee" exact element={<Committee />} />
+          <Route path="/call-for-papers" exact element={<CallForPapers />} />
+          <Route path="/comittee" exact element={<Committee />} />
         </Routes>
       </BrowserRouter>
     </div>

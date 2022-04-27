@@ -1,5 +1,40 @@
 import React from 'react'
 
+const navItems = [
+  {
+    pathname: "/",
+    name: "Home",
+  },
+  {
+    pathname: "/about",
+    name: "About",
+  },
+  {
+    pathname: "/registration",
+    name: "Registration",
+  },
+  {
+    pathname: "/call-for-papers",
+    name: "Call For Papers",
+  },
+  {
+    pathname: "/program",
+    name: "Program",
+  },
+  {
+    pathname: "/important-dates",
+    name: "Important Dates",
+  },
+  {
+    pathname: "/comittee",
+    name: "Comittee",
+  },
+  {
+    pathname: "/contact-us",
+    name: "Contact Us",
+  },
+]
+
 const Header = () => {
   const [isScrolled, setScrolled] = React.useState(false);
 
@@ -12,6 +47,8 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
   }, [])
 
+  console.log(window.location.pathname)
+
   return (
     <>
         <div className="header">
@@ -20,47 +57,13 @@ const Header = () => {
               <img src="/logos/nit-white-logo.png" alt="" className="nit-logo" />
             </div>
             <div className="links">
-              <div className="nav-btn-box">
-                <a href="/" className="nav-btn home-btn">
-                  Home
-                </a>
-              </div>
-              <div className="nav-btn-box">
-                <a href="#" className="nav-btn about-btn">
-                  About
-                </a>
-              </div>
-              <div className="nav-btn-box">
-                <a href="#" className="nav-btn Registration-btn">
-                  Registration
-                </a>
-              </div>
-              <div className="nav-btn-box">
-                <a href="/callForPapers" className="nav-btn papers-btn">
-                  Call For Papers
-                </a>
-              </div>
-              <div className="nav-btn-box">
-                {" "}
-                <a href="#" className="nav-btn program-btn">
-                  Program
-                </a>
-              </div>
-              <div className="nav-btn-box">
-                <a href="#" className="nav-btn dates-btn">
-                  Important Dates
-                </a>
-              </div>
-              <div className="nav-btn-box">
-                <a href="/committee" className="nav-btn commitee-btn">
-                  Commitee
-                </a>
-              </div>
-              <div className="nav-btn-box">
-                <a href="#" className="nav-btn contact-btn">
-                  Contact Us
-                </a>
-              </div>
+            {
+              navItems.map((item, i) => (
+                <div key={i} className={item.pathname == window.location.pathname ? "nav-btn-box active-btn" : "nav-btn-box"}>
+                  <a href={item.pathname} className="nav-btn">{item.name}</a>
+                </div>
+              ))
+            }
             </div>
           </div>
           <div className="heading">
