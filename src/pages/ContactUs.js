@@ -13,13 +13,16 @@ const ContactUs = () => {
               <p>Dr. Shivendra Kumar Pandey</p>
               <p className="mt-1">Assistant Professor, E&I Dept., NIT Silchar</p>
               <p className="mt-1">Phone: +91-8011-886745 </p>
-              <p className="mt-1">Email:  <a href="mailto:seban@ei.nits.ac.in" target="_blank" rel="noreferrer">skpandey@ei.nits.ac.in</a></p>
+              <p className="mt-1">Email:  <a href="mailto:skpandey@ei.nits.ac.in" target="_blank" rel="noreferrer">skpandey@ei.nits.ac.in</a></p>
             </li>
             <li className="member mt-4">
               <p>Dr. Lalu Seban</p>
               <p className="mt-1">Assistant Professor, E&I Dept., NIT Silchar</p>
               <p className="mt-1">Phone: +91-9425472154 </p>
               <p className="mt-1">Email: <a href="mailto:seban@ei.nits.ac.in" target="_blank" rel="noreferrer">seban@ei.nits.ac.in</a></p>
+            </li>
+            <li className="member mt-4">
+              <p className="mt-1">Email: <a href="mailto:ee2a2022@nits.ac.in" target="_blank" rel="noreferrer">ee2a2022@nits.ac.in</a></p>
             </li>
           </ul>
         </div>

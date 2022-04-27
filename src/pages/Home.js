@@ -62,8 +62,8 @@ const Home = () => {
       <p className="mt-2 mb-1">Here are our Key note Speakers</p>
       <CustomHR color="#525E75" />
       <div className="mb-3" />
-      <div className="user-container">
-        {users.map((user, i) => {
+      <div className="user-container pb-4">
+        {/* {users.map((user, i) => {
           const props = {
             img: user.img,
             name: user.name,
@@ -73,7 +73,8 @@ const Home = () => {
           return (
             <ProfileCard key={i} {...props} />
           )
-        })}
+        })} */}
+        <span className='red-text'>To be updated soon...</span>
       </div>
     </section>
   </>
