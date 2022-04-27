@@ -22,7 +22,7 @@ const ContactUs = () => {
               <p className="mt-1">Email: <a href="mailto:seban@ei.nits.ac.in" target="_blank" rel="noreferrer">seban@ei.nits.ac.in</a></p>
             </li>
             <li className="member mt-4">
-              <p className="mt-1">Email: <a href="mailto:ee2a2022@nits.ac.in" target="_blank" rel="noreferrer">ee2a2022@nits.ac.in</a></p>
+              <p className="mt-1">Email: <a href="mailto:e2a2022@nits.ac.in" target="_blank" rel="noreferrer">e2a2022@nits.ac.in</a></p>
             </li>
           </ul>
         </div>
