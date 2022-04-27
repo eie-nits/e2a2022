@@ -8,7 +8,7 @@ const Header = () => {
           <div className="logo">
             <img src="/logos/nit-white-logo.png" alt="" className="nit-logo" />
           </div>
-          <div className="links">
+          <div className="links" id="links">
             <div className="nav-btn-box">
               <a href="/" className="nav-btn home-btn">
                 Home
@@ -50,6 +50,11 @@ const Header = () => {
                 Contact Us
               </a>
             </div>
+          </div>
+          <div className="menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
         <div className="heading">

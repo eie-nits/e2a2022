@@ -75,6 +75,40 @@ body::-webkit-scrollbar {
 .nav-btn:hover {
   color: #ff004d;
 }
+.menu{
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 20px;
+}
+.menu span{
+  width: 100%;
+  height: 2px;
+  border-radius: 99px;
+  background: #fff;
+  transition: 0.3s ease;
+  transform-origin: left;
+}
+.menu.active span{
+  background: #ff004d;
+}
+.menu.active span:nth-child(1) {
+  transform: rotate(40deg);
+}
+.menu span:nth-child(3) {
+  transform-origin: left;
+}
+.menu.active span:nth-child(3) {
+  transform: rotate(-40deg);
+}
+.menu.active span:nth-child(2) {
+  transform: scale(0);
+}
 .papers-btn {
   color: #ff004d;
 }
@@ -220,10 +254,40 @@ body::-webkit-scrollbar {
   }
   .nav-bar {
     padding: 3%;
+    justify-content: space-between;
   }
   .logo {
     padding-left: 3%;
     width: 4rem;
+  }
+  .menu {
+    display: flex;
+    position: relative;
+  }
+  .links div{
+    --height: 0px;
+
+    flex-direction: column;
+    background: var(--nav-bg);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 56px;
+    height: var(--height);
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+  }
+  .nav-btn-box{
+    width: 100%;
+    text-align: center;
+  }
+  .nav-btn{
+    width: 100%;
+  }
+  .links.active{
+    --height: calc(
+      (((20 * 2) + (17 * 1.5))) * var(--childenNumber)
+    );
+    transition: 1s ease;
   }
   .heading {
     width: 100%;
@@ -256,5 +320,8 @@ body::-webkit-scrollbar {
   .paper-list {
     margin-left: 2%;
     padding-right: 1%;
+  }
+  .list-accordion{
+    width: 84%;
   }
 }
