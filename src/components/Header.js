@@ -66,21 +66,27 @@ const Header = () => {
             }
             </div>
           </div>
-          <div className="heading">
-            INTERNATIONAL CONFERENCE{" "}
-            <span className="red-text">ON EMERGING ELECTRONICS</span> AND
-            AUTOMATION
+          <div className="menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div className="date">
-            16<sup>th</sup> - 18<sup>th</sup> Dec, <span className="red-text">2022</span>
-          </div>
-          <div className="organised-by">
-            Organised By <br /> Department Of Electronics And Instrumentation
-            Engineering
-          </div>
-          <div className="college-name">
-            NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR
-          </div>
+        </div>
+        <div className="heading">
+          INTERNATIONAL CONFERENCE{" "}
+          <span className="red-text">ON EMERGING ELECTRONICS</span> AND
+          AUTOMATION
+        </div>
+        <div className="date">
+          7th-9th Dec, <span className="red-text">2022</span>
+        </div>
+        <div className="organised-by">
+          Organised By <br /> Department Of Electronics And Instrumentation
+          Engineering
+        </div>
+        <div className="college-name">
+          NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR
+        </div>
       </div>
     </>
   )
