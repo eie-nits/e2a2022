@@ -12,7 +12,6 @@ import CustomHR from "../components/CustomHR";
 const Home = () => {
   return (
   <>
-    <Header />
     <section className="container home-page">
         <div className="about">
           <h2 className="about-heading mb-1">About The Conference</h2>

@@ -19,7 +19,7 @@ const CallForPapers = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="main-content">
         <div className="paper-heading">
           <span className="heading-text">

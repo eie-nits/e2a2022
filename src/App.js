@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import CallForPapers from "./pages/CallForPapers";
 import Committee from "./pages/Committee";
+import Header from "./components/Header";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       {/* <Navbar />
       <div style={{ marginTop: "48px" }} /> */}
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/call-for-papers" exact element={<CallForPapers />} />
