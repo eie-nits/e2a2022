@@ -177,7 +177,7 @@ const Committee = () => {
         </div>
 
         <div className='list'>
-          <h1>Website & Online Platform Commitee</h1>
+          <h1>Sponsorship</h1>
           <h3>
             Dr. Manas Kumar Bera, NIT Silchar
           </h3>

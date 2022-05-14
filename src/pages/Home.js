@@ -42,14 +42,14 @@ const Home = () => {
               <img src={location} alt="location" />
               <h4 className="ml-1">Venue</h4> 
             </div>
-            <p>National Institute Of Technology, Silchar <br />NIT Road, Fakiratilla, Silchar, Assam 788010</p>
+            <p>National Institute Of Technology Silchar</p>
           </div>
           <div className="mb-3">
             <div className="mb-1">
               <img src={time} alt="location" />
               <h4 className="ml-1">Date</h4> 
             </div>
-            <p>16<sup>th</sup> - 18<sup>th</sup> Dec</p>
+            <p>16<sup>th</sup> - 18<sup>th</sup> December 2022</p>
           </div>
           <div className="mb-3">
             <div className="mb-1">

@@ -17,7 +17,7 @@ const ImportantDates = () => {
 
         <ul>
           <li style={{textAlign: "start"}} className='mtb-1'>
-            Paper Submission Opens: 15.05.2022
+            Paper Submission Opens: 31.05.2022
           </li>
           <li style={{textAlign: "start"}} className='mtb-1'>
             Submission Deadline: 15.08.2022
