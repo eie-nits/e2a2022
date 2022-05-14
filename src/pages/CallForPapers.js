@@ -4,6 +4,13 @@ import data from "../assets/papers"
 
 const CallForPapers = () => {
   const [activeState, setActiveState] = React.useState([...new Array(data.length).fill(false)])
+  const container = React.useRef(null);
+  const scrollToBottom = () => {
+    container.current.scrollIntoView({ behavior: "smooth" })
+  }
+
+  React.useEffect(scrollToBottom, []);
+
   const handleClick = (e, i) => {
     const obj = activeState;
     obj[i] = !activeState[i];
@@ -19,7 +26,7 @@ const CallForPapers = () => {
   return (
     <>
       {/* <Header /> */}
-      <div className="main-content">
+      <div className="main-content" ref={container}>
         <div className="paper-heading">
           <span className="heading-text">
             Call For <span className="red-text">Regular Papers</span>

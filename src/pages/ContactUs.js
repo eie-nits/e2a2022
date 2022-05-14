@@ -6,13 +6,20 @@ const ContactUs = () => {
   const [email, setEmail] = React.useState("")
   const [msg, setMsg] = React.useState("")
 
+  const container = React.useRef(null);
+  const scrollToBottom = () => {
+    container.current.scrollIntoView({ behavior: "smooth" })
+  }
+
+  React.useEffect(scrollToBottom, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     window.open(`mailto:e2a@nits.ac.in?subject=${subject}&body=${msg}`);
   }
 
   return (
-    <div className="container ptb-4">
+    <div className="container ptb-4" ref={container}>
       <div className="card">
         <div className="members">
           <h3>Got a query?</h3>

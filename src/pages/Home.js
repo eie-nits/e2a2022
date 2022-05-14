@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import "../css/home.css"
 import location from "../assets/svg/location.svg"
 import time from "../assets/svg/time.svg"
@@ -9,6 +9,12 @@ import CustomHR from "../components/CustomHR";
 
 
 const Home = () => {
+  const container = useRef(null)
+  const scrollToBottom = () => {
+    container.current.scrollIntoView({ behavior: "smooth" })
+  }
+
+  useEffect(scrollToBottom, []);
   return (
   <>
     <section className="container home-page">
@@ -57,7 +63,7 @@ const Home = () => {
 
     {/* Keynote Speakers */}
 
-    <section className="keynote-speakers pt-4">
+    <section ref={container} className="keynote-speakers pt-4">
       <h3>Key Note Speakers</h3>
       <p className="mt-2 mb-1">Here are our Key note Speakers</p>
       <CustomHR color="#525E75" />
