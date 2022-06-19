@@ -1,5 +1,6 @@
 import React from 'react'
 import "../assets/css/header.css"
+import DropDown from "./DropDown";
 
 const navItems = [
   {
@@ -11,16 +12,36 @@ const navItems = [
     name: "About us",
   },
   {
-    pathname: "/registration",
-    name: "Registration",
+    // pathname: "/registration",
+    name: "For Authors",
+    subItems: [
+      {
+        name: "Registration",
+        pathname: "/author-registration"
+      },
+      {
+        name: "Regular Paper Submission",
+        pathname: "/author-submission"
+      },
+    ]
   },
   {
     pathname: "/call-for-papers",
     name: "Call for Papers",
   },
   {
-    pathname: "/program",
+    // pathname: "/program",
     name: "Program",
+    subItems: [
+      {
+        name: "Brochure",
+        pathname: "/program-brochure"
+      },
+      {
+        name: "Schedule",
+        pathname: "/program-schedule"
+      },
+    ]
   },
   {
     pathname: "/important-dates",
@@ -29,6 +50,10 @@ const navItems = [
   {
     pathname: "/comittee",
     name: "Comittee",
+  },
+  {
+    pathname: "/sponsorship",
+    name: "Sponsorship",
   },
   {
     pathname: "/contact-us",
@@ -40,7 +65,7 @@ const Header = () => {
   const [isScrolled, setScrolled] = React.useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 50) setScrolled(true);
+    if (window.scrollY > 80) setScrolled(true);
     else setScrolled(false);
   }
 
@@ -57,12 +82,20 @@ const Header = () => {
         </div>
         <div className="links">
         {
-          navItems.map((item, i) => (
-            <div key={i} className={item.pathname == window.location.pathname ? "nav-btn-box active-btn" : "nav-btn-box"}>
-              <a href={item.pathname==="/about" ? "/#about" : item.pathname} className="nav-btn">{item.name}</a>
-            </div>
-          ))
-        }
+            navItems.map((item, i) => 
+            (item.subItems && item.subItems.length > 0 ) ? (
+              <div key={i} >
+                <DropDown subItems={item.subItems}>
+                  <a className="nav-btn">{item.name}</a>
+                </DropDown>
+              </div>
+            ) : 
+            (
+              <div key={i} className={item.pathname == window.location.pathname ? "nav-btn-box active-btn" : "nav-btn-box"}>
+                <a href={item.pathname==="/about" ? "/#about" : item.pathname} className="nav-btn">{item.name}</a>
+              </div>
+            ))
+          }
         </div>
       </nav>
         <nav role="navigation">
@@ -91,7 +124,7 @@ const Header = () => {
           16<sup>th</sup> - 18<sup>th</sup> Dec, <span className="red-text">2022</span>
         </div>
         <div className="organised-by">
-          Organised By <br /> Department Of Electronics and Instrumentation
+          Organised by <br /> Department Of Electronics and Instrumentation
           Engineering
         </div>
         <div className="logo log-15x mt-2">
@@ -101,7 +134,7 @@ const Header = () => {
           NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR
         </div>
         <div>
-          <h6 className="organised-by bold mb-1">Technically Co-Sponsored By</h6>
+          <h6 className="organised-by bold mb-1">Technically Co-Sponsored by</h6>
           <img className="logo2" src="/logos/logo_springer.jpg" alt="" />
         </div>
       </div>

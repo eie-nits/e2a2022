@@ -12,7 +12,7 @@ import CustomHR from "../components/CustomHR";
 const Home = () => {
   return (
   <>
-    <section className="container home-page">
+    <section id="about" className="container home-page">
         <div className="about">
           <h2 className="about-heading mb-1">About The Conference</h2>
           <div className="home-about-content">
@@ -26,7 +26,6 @@ const Home = () => {
           <div className="mtb-2" />
 
           <p className="text1 red">It is planned to publish the peer reviewed and selected papers of conference as proceedings with Springer in their prestigious “Lecture Notes in Electrical Engineering” series (<a className="link" href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer">https://www.springer.com/series/7818</a>). For detailed instructions for author and editors of conference proceedings, kindly visit the following link: (<a className="link" href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer">https://www.springer.com/us/authors-editors/conference-proceedings</a>). Select papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers and only papers that pass these checks will be published. Springer Nature does not charge any money for publication of Non-Open Access content. Abstracts/extended abstracts and short papers (less than 4 pages) are not considered for publication.</p>
-
         </div>
 
         <div className="mlr-2" />
@@ -56,12 +55,27 @@ const Home = () => {
         </div>
     </section>
 
+    {/* Spnosors */}
+
+    <section className="text-center sponsors container">
+      <h3 className="heading_h3 mb-1">Our Sponsors</h3>
+      <CustomHR color="#626E75" />
+      <div className="mb-3" />
+      <div className="container flex-col pb-4">
+        <h5 className="heading_h5 mb-1">Technical Co-Sponsor</h5>
+        <img className="logo2" src="/logos/logo_springer.jpg" alt="" />
+      </div>
+      <div className="container flex-col pb-4">
+        <h5 className="heading_h5 mb-1">Other Sponsors</h5>
+        <span className='red-text'>To be updated soon...</span>
+      </div>
+    </section>
     {/* Keynote Speakers */}
 
-    <section id="about" className="keynote-speakers pt-4">
-      <h3>Key Note Speakers</h3>
+    <section className="keynote-speakers pt-4">
+      <h3 className="heading_h3">Key Note Speakers</h3>
       <p className="mt-2 mb-1">Here are our Key note Speakers</p>
-      <CustomHR color="#525E75" />
+      <CustomHR color="#777" />
       <div className="mb-3" />
       <div className="user-container pb-4">
         {/* {users.map((user, i) => {

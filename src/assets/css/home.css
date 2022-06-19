@@ -48,6 +48,9 @@
 .log-15x {
   width: 9rem !important;
 }
+.sponsors {
+  color: #eee
+}
 
 /* Keynote SPeakers */
 
@@ -55,21 +58,19 @@
   background-color: #eee;
   /* height: 100vh; */
   text-align: center;
+  color: #1B2430;
 }
 
-.keynote-speakers > h3 {
-  font-size: 36px;
+.heading_h3 {
+  font-size: 30px;
   text-transform: uppercase;
+}
+.heading_h5 {
+  font-size: 24px;
+  font-weight: 500;
 }
 .keynote-speakers > p {
   color: #444;
-}
-.user-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
-  margin: 0 auto;
 }
 
 .fig-container {
@@ -152,4 +153,11 @@
   opacity: 1;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
+}
+
+/* Spnosors */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/comittee" exact element={<Committee />} />
           <Route path="/contact-us" exact element={<ContactUs />} />
           <Route path="/important-dates" exact element={<ImportantDates />} />
-          <Route path="/registration" exact element={<Registration />} />
+          <Route path="/author-registration" exact element={<Registration />} />
           <Route path="/program" exact element={<Program />} />
         </Routes>
       </BrowserRouter>
