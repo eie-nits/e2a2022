@@ -30,6 +30,25 @@
   }
 }
 
+/* Sponsorship */
+
+.red {
+  color: #C96521;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link:hover {
+  /* color: #D6D5A8; */
+  text-decoration: underline;
+}
+.log-15x {
+  width: 9rem !important;
+}
+
 /* Keynote SPeakers */
 
 .keynote-speakers {

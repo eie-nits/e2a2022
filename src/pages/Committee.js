@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/commitee.css';
+import '../assets/css/commitee.css';
 import members from "../assets/members"
 
 const Committee = () => {

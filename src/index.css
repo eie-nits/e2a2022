@@ -224,9 +224,16 @@
   padding: 4ch;
 }
 
+
+.App {
+  background-color: #1B2430;
+}
 .text1 {
   font-family: OpenSans, sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.6;
   text-align: justify;
+}
+.bold {
+  font-weight: bold;
 }

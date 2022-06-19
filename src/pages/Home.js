@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import React, {useEffect, useRef} from "react";
-import "../css/home.css"
+import "../assets/css/home.css"
 import location from "../assets/svg/location.svg"
 import time from "../assets/svg/time.svg"
 import meetingRoom from "../assets/svg/meeting-room.svg"
@@ -9,12 +10,6 @@ import CustomHR from "../components/CustomHR";
 
 
 const Home = () => {
-  const container = useRef(null)
-  const scrollToBottom = () => {
-    container.current.scrollIntoView({ behavior: "smooth" })
-  }
-
-  useEffect(scrollToBottom, []);
   return (
   <>
     <section className="container home-page">
@@ -30,7 +25,7 @@ const Home = () => {
 
           <div className="mtb-2" />
 
-          <p>We are expecting the peer-reviewed and selected papers of E2A 2022 conference to be published as proceedings with Springer in their prestigious &quot;Lecture Notes in Electrical Engineering&quot; series (<a href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer">https://www.springer.com/series/7818</a>). This series is indexed by EI Compendex and Scopus databases.</p>
+          <p className="text1 red">It is planned to publish the peer reviewed and selected papers of conference as proceedings with Springer in their prestigious “Lecture Notes in Electrical Engineering” series (<a className="link" href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer">https://www.springer.com/series/7818</a>). For detailed instructions for author and editors of conference proceedings, kindly visit the following link: (<a className="link" href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer">https://www.springer.com/us/authors-editors/conference-proceedings</a>). Select papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers and only papers that pass these checks will be published. Springer Nature does not charge any money for publication of Non-Open Access content. Abstracts/extended abstracts and short papers (less than 4 pages) are not considered for publication.</p>
 
         </div>
 
@@ -42,7 +37,7 @@ const Home = () => {
               <img src={location} alt="location" />
               <h4 className="ml-1">Venue</h4> 
             </div>
-            <p>National Institute Of Technology Silchar</p>
+            <p>National Institute of Technology Silchar</p>
           </div>
           <div className="mb-3">
             <div className="mb-1">
@@ -63,7 +58,7 @@ const Home = () => {
 
     {/* Keynote Speakers */}
 
-    <section ref={container} className="keynote-speakers pt-4">
+    <section id="about" className="keynote-speakers pt-4">
       <h3>Key Note Speakers</h3>
       <p className="mt-2 mb-1">Here are our Key note Speakers</p>
       <CustomHR color="#525E75" />

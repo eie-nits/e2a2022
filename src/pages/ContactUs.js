@@ -1,5 +1,5 @@
 import React from 'react'
-import "../css/contactUs.css";
+import "../assets/css/contactUs.css";
 
 const ContactUs = () => {
   const [subject, setSubject] = React.useState("")

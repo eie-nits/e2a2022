@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/callForPapers.css";
 import data from "../assets/papers"
+import "../assets/css/callForPapers.css"
 
 const CallForPapers = () => {
   const [activeState, setActiveState] = React.useState([...new Array(data.length).fill(false)])
@@ -48,13 +48,13 @@ const CallForPapers = () => {
                   {
                     activeState[i]  && (
                         <div className="list-items">
-                          <ul className="pl-3">
+                          <ol className="pl-3">
                             {
                               el.items.map((list, key) => (
                                 <li className="mtb-2" key={key}>{list}</li>
                               ))
                             }
-                          </ul>
+                          </ol>
                       </div>
                     )
                   }
