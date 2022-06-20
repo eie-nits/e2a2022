@@ -273,3 +273,6 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.bg-white {
+  background: #eee;
+}

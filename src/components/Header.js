@@ -21,7 +21,7 @@ const navItems = [
       },
       {
         name: "Regular Paper Submission",
-        pathname: "/author-submission"
+        pathname: "/author-regular-paper-submission"
       },
     ]
   },

@@ -93,6 +93,20 @@ export default [
   },
   {
     heading: "Energy, Power System and Power Electronics",
-    items: []
+    items: [
+      "Modelling of power and energy systems",
+      "Electrical, thermal, ageing model and estimation of energy storage",
+      "Power electronic converters for power or energy systems",
+      "Energy/power management",
+      "Battery management",
+      "Renewable energy",
+      "Electrified transportation",
+      "Energy storage sizing",
+      "EV Charging",
+      "Energy efficient building",
+      "Micro grid",
+      "Vehicle-to-grid integration",
+      "Grid integration of renewable energy"
+    ]
   }
 ]

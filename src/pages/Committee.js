@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/commitee.css';
 import members from "../assets/members"
+import ProfileCard from '../components/ProfileCard';
 
 const Committee = () => {
   const container = React.useRef(null);
@@ -20,28 +21,26 @@ const Committee = () => {
 
         <div className='list'>
           <h1 style={{ marginBottom: '-5px' }}>Patron</h1>
-          <h3>Prof. Sivaji Bandyopadhyay, Director, NIT Silchar</h3>
+          <ProfileCard img={"/images/Sivaji Bandyopadhyay_Director.jpg"} name="Prof. Sivaji Bandyopadhyay, Director, NIT Silchar" />
         </div>
         <div className='list'>
           <h1 style={{ marginBottom: '-5px' }}>Honorary Chair</h1>
 
-          <h3>
-            Prof. Jagannathan Sarangapani, Missouri Institute of Science and
-            Technology, USA
-          </h3>
+          <ProfileCard img={"/images/Jagannath Sarangapani_Hon Chair.jpg"} name="Prof. Jagannathan Sarangapani, Missouri Institute of Science and
+            Technology, USA" />
         </div>
 
         <div className='list'>
           <h1 style={{ marginBottom: '-5px' }}>General Chair</h1>
-
-          <h3>Prof. Moncef Gabbouj, Tampere University, Finland</h3>
-          <h3>Dr. Ranjay Hazra, NIT Silchar</h3>
-          <h3>Prof. Quan Xin Zhen, Hunan Normal University, China</h3>
-          <h3>Prof. Shyam Sudhir Pandey, Kyushu Institute of Technology, Japan</h3>
+          <div className='mt-2' style={{display: "flex", justifyContent: 'space-evenly', flexWrap: "wrap", width: "100%"}}>
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Moncef Gabbouj_Gen Chair.jpg"} name="Prof. Moncef Gabbouj, Tampere University, Finland" />
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Quanxin Zhu_Gen Chair.PNG"} name="Prof. Quan Xin Zhen, Hunan Normal University, China" />
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Shyam Sudhir Pandey_Gen Chair.jpg"} name="Prof. Shyam Sudhir Pandey, Kyushu Institute of Technology, Japan" />
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Ranjay Hazra_Gen Chair.jpg"} name="Dr. Ranjay Hazra, NIT Silchar" />
+          </div>
         </div>
         <div className='list'>
           <h1 style={{ marginBottom: '-5px' }}>Convenor</h1>
-
           <h3>Dr. Manas Kumar Bera, NIT Silchar</h3>
         </div>
 

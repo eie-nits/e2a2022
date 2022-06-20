@@ -10,6 +10,8 @@ import ContactUs from "./pages/ContactUs";
 import ImportantDates from "./pages/ImportantDates";
 import Registration from "./pages/Registration";
 import Program from "./pages/Program";
+import RegularPaperSubmission from "./pages/RegularPaperSubmission";
+import Sponsorship from "./pages/Sponsorship";
 
 const App = () => {
   return (
@@ -23,7 +25,9 @@ const App = () => {
           <Route path="/contact-us" exact element={<ContactUs />} />
           <Route path="/important-dates" exact element={<ImportantDates />} />
           <Route path="/author-registration" exact element={<Registration />} />
+          <Route path="/author-regular-paper-submission" exact element={<RegularPaperSubmission />} />
           <Route path="/program" exact element={<Program />} />
+          <Route path="/sponsorship" exact element={<Sponsorship />} />
         </Routes>
       </BrowserRouter>
     </div>
