@@ -226,7 +226,7 @@
 
 
 .App {
-  background-color: #1B2430;
+  background-color: #fff;
 }
 .text1 {
   font-family: OpenSans, sans-serif;
@@ -274,5 +274,14 @@
   display: block;
 }
 .bg-white {
-  background: #eee;
+  background: #fff;
+  color: #111;
+}
+.schedule {
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

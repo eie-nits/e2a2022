@@ -10,7 +10,7 @@ const ProfileCard = (props) => {
       <figcaption>
         <h3 style={{textAlign: "center"}}>{props.name}</h3>
         <h4>{props.designation}</h4>
-        <p>{props.bio}</p>
+        <span><a style={{color: "red"}} href={props.link} target="__blank">{props.link && "weblink"}</a></span>
       </figcaption>
     </figure>
   )

@@ -15,34 +15,45 @@ const Registration = () => {
           <table className='table mt-2'>
             <tr className="text-center">
               <th>Category</th>
-              <th>Nationals <br /> (Rs.)</th>
-              <th>Foreign Nationals <br /> (USD)</th>
+              <th>Indian Authors <br /> (in INR)</th>
+              <th>Foreign Authors <br /> (in USD)</th>
+              <th>Late registration - Indian Authors <br /> (in INR)</th>
+              <th>Late registration - Foreign Authors <br /> (in USD)</th>
             </tr>
             <tr>
               <td>Students</td>
-              <td>1500</td>
-              <td>50</td>
+              <td>3000</td>
+              <td>100</td>
+              <td>4000</td>
+              <td>150</td>
             </tr>
             <tr>
-              <td>Academicians/ Industry/ R&D Professional/ Scientists</td>
-              <td>2500</td>
-              <td>80</td>
+              <td>Academician/Scientists</td>
+              <td>4000</td>
+              <td>200</td>
+              <td>5000</td>
+              <td>250</td>
             </tr>
             <tr>
-              <td>Attendee</td>
-              <td>1000</td>
-              <td>30</td>
+              <td>Industry</td>
+              <td>5000</td>
+              <td>300</td>
+              <td>6000</td>
+              <td>350</td>
             </tr>
             <tr>
               <td>Additional Paper per Author</td>
-              <td>1000</td>
-              <td>30</td>
+              <td>1500</td>
+              <td>50</td>
+              <td>2500</td>
+              <td>100</td>
             </tr>
           </table>
         </div>
       <div className='registration mt-4'>
         <h3>Registration Guidelines</h3>
-          <ol className="ml-4 mt-2">
+        <span className='red-text mt-2'>To be updated soon...</span>
+          {/* <ol className="ml-4 mt-2">
             <li className="bold">Important points (please read before you proceed for registration):
               <ul className="ml-3 mt-1">
                 <li className="mt-1">All participants must fill the google form (Link: <a className="link" href="https://forms.gle/tfLQZNvoPbteFMEz5" target="_blank" rel="noreferrer">https://forms.gle/tfLQZNvoPbteFMEz5</a>) to register themselves for the conference, after paying the registration fees.</li>
@@ -99,7 +110,7 @@ const Registration = () => {
               <li className="mt-1 bold">The page limit for each submission should be 6-12 for regular papers.</li>
             </ul>
             </li>
-          </ol>
+          </ol> */}
         </div>
       </div>
   )

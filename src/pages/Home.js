@@ -4,6 +4,7 @@ import "../assets/css/home.css"
 import location from "../assets/svg/location.svg"
 import time from "../assets/svg/time.svg"
 import meetingRoom from "../assets/svg/meeting-room.svg"
+import website from "../assets/svg/website.svg"
 import ProfileCard from "../components/ProfileCard";
 import users from "../assets/users"
 import CustomHR from "../components/CustomHR";
@@ -12,9 +13,9 @@ import CustomHR from "../components/CustomHR";
 const Home = () => {
   return (
   <>
-    <section id="about" className="container home-page">
+    <section id="about" className="container home-page bg-white">
         <div className="about">
-          <h2 className="about-heading mb-1">About The Conference</h2>
+          <h2 className="about-heading mb-1 mt-1">About The Conference</h2>
           <div className="home-about-content">
             <p className="text1">Emerging Electronics and Automation (E2A) 2022 is the 2<sup>nd</sup> annual International Conference organized by the Department of Electronics and Instrumentation Engineering at NIT Silchar, Assam. E2A 2022 is scheduled to be held hybrid between 16th and 18th December 2022.</p>
 
@@ -52,23 +53,33 @@ const Home = () => {
             </div>
             <p>Hybrid</p>
           </div>
+          <div className="mb-3">
+            <div className="mb-1">
+              <img src={website} alt="website" />
+              <h4 className="ml-1">Previous Edition</h4>
+            </div>
+            <p>
+              <a className="e2a-link" href="https://e2a.nits.ac.in">e2a2021</a>
+            </p>
+          </div>
         </div>
     </section>
 
     {/* Spnosors */}
 
     <section className="text-center sponsors container">
-      <h3 className="heading_h3 mb-1">Our Sponsors</h3>
-      <CustomHR color="#626E75" />
+      <h3 className="heading_h3 mb-1">Technical Co-Sponsor</h3>
+        <img className="logo2" src="/logos/logo_springer.jpg" alt="" />
+      {/* <CustomHR color="#626E75" /> */}
       <div className="mb-3" />
-      <div className="container flex-col pb-4">
+      {/* <div className="container flex-col pb-4">
         <h5 className="heading_h5 mb-1">Technical Co-Sponsor</h5>
         <img className="logo2" src="/logos/logo_springer.jpg" alt="" />
-      </div>
-      <div className="container flex-col pb-4">
+      </div> */}
+      {/* <div className="container flex-col pb-4">
         <h5 className="heading_h5 mb-1">Other Sponsors</h5>
         <span className='red-text'>To be updated soon...</span>
-      </div>
+      </div> */}
     </section>
     {/* Keynote Speakers */}
 

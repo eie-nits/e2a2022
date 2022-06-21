@@ -131,10 +131,11 @@ const Header = () => {
             <img src="/logos/logo2.png" alt="" className="nit-logo" />
           </div>
         <div className="college-name mt-1">
-          NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR
+          NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR <br />
+          (Assam, India)
         </div>
         <div>
-          <h6 className="organised-by bold mb-1">Technically Co-Sponsored by</h6>
+          <h6 className="organised-by bold mt-2 mb-1">Technically Co-Sponsored by</h6>
           <img className="logo2" src="/logos/logo_springer.jpg" alt="" />
         </div>
       </div>

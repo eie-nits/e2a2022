@@ -12,6 +12,7 @@ import Registration from "./pages/Registration";
 import Program from "./pages/Program";
 import RegularPaperSubmission from "./pages/RegularPaperSubmission";
 import Sponsorship from "./pages/Sponsorship";
+import Schedule from "./pages/Schedule";
 
 const App = () => {
   return (
@@ -28,7 +29,9 @@ const App = () => {
           <Route path="/author-regular-paper-submission" exact element={<RegularPaperSubmission />} />
           <Route path="/program" exact element={<Program />} />
           <Route path="/sponsorship" exact element={<Sponsorship />} />
+          <Route path="/program-schedule" exact element={<Schedule />} />
         </Routes>
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

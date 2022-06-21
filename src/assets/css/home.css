@@ -64,6 +64,7 @@
 .heading_h3 {
   font-size: 30px;
   text-transform: uppercase;
+  color: #111;
 }
 .heading_h5 {
   font-size: 24px;
@@ -162,4 +163,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.e2a-link {
+  color: rgb(94, 122, 226);
+}
+.e2a-link:hover {
+  text-decoration: underline !important;
 }

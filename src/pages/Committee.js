@@ -33,24 +33,25 @@ const Committee = () => {
         <div className='list'>
           <h1 style={{ marginBottom: '-5px' }}>General Chair</h1>
           <div className='mt-2' style={{display: "flex", justifyContent: 'space-evenly', flexWrap: "wrap", width: "100%"}}>
-            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Moncef Gabbouj_Gen Chair.jpg"} name="Prof. Moncef Gabbouj, Tampere University, Finland" />
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Moncef Gabbouj_Gen Chair.jpg"} name={`Prof. Moncef Gabbouj, Tampere University, Finland`} link={"https://www.tuni.fi/en/moncef-gabbouj"} />
             <ProfileCard style={{maxWidth: "260px"}} img={"/images/Quanxin Zhu_Gen Chair.PNG"} name="Prof. Quan Xin Zhen, Hunan Normal University, China" />
-            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Shyam Sudhir Pandey_Gen Chair.jpg"} name="Prof. Shyam Sudhir Pandey, Kyushu Institute of Technology, Japan" />
-            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Ranjay Hazra_Gen Chair.jpg"} name="Dr. Ranjay Hazra, NIT Silchar" />
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Shyam Sudhir Pandey_Gen Chair.jpg"} name="Prof. Shyam Sudhir Pandey, Kyushu Institute of Technology, Japan" link="www.life.kyutech.ac.jp/~shyam/" />
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/Ranjay Hazra_Gen Chair.jpg"} name="Dr. Ranjay Hazra, NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
           </div>
         </div>
         <div className='list'>
           <h1 style={{ marginBottom: '-5px' }}>Convenor</h1>
-          <h3>Dr. Manas Kumar Bera, NIT Silchar</h3>
+          <ProfileCard img={"/images/mkb.jpg"} name="Dr. Manas Kumar Bera, NIT Silchar" />
         </div>
 
         <div className='list'>
           <h1>Organizing Chairs/Secretary</h1>
-
-          <h3>Dr. Rajdeep Dasgupta, NIT Silchar</h3>
-          <h3>Dr. Lalu Seban, NIT Silchar</h3>
-          <h3>Dr. Shivendra Kumar Pandey, NIT Silchar</h3>
-          <h3>Dr. Vipin Chandra Pal, NIT Silchar</h3>
+          <div className='mt-2' style={{display: "flex", justifyContent: 'space-evenly', flexWrap: "wrap", width: "100%"}}>
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/rd.jpg"} name="Dr. Rajdeep Dasgupta, NIT Silchar" />
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/skp.jpeg"} name="Dr. Shivendra Kumar Pandey, NIT Silchar" />
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/ls.jpg"} name="Dr. Lalu Seban, NIT Silchar" />
+            <ProfileCard style={{maxWidth: "260px"}} img={"/images/vcp.jpg"} name="Dr. Vipin Chandra Pal, NIT Silchar" />
+          </div>
         </div>
 
         <div className='list'>
