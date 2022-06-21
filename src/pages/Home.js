@@ -59,7 +59,7 @@ const Home = () => {
               <h4 className="ml-1">Previous Edition</h4>
             </div>
             <p>
-              <a className="e2a-link" href="https://e2a.nits.ac.in">e2a2021</a>
+              <a className="e2a-link" target="__blank" href="https://e2a.nits.ac.in">e2a2021</a>
             </p>
           </div>
         </div>

@@ -6,7 +6,7 @@
   position: relative;
   color: black;
   background-color: #95D1CC;
-  box-shadow: 2px 2px 20px #777;
+  box-shadow: 2px 2px 20px #ddd;
   display: flex;
   justify-content: space-between;
 }
