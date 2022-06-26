@@ -9,7 +9,7 @@ const navItems = [
   },
   {
     pathname: "/about",
-    name: "About us",
+    name: "About Conference",
   },
   {
     // pathname: "/registration",
@@ -48,8 +48,8 @@ const navItems = [
     name: "Important Dates",
   },
   {
-    pathname: "/comittee",
-    name: "Comittee",
+    pathname: "/committee",
+    name: "Committee",
   },
   {
     pathname: "/sponsorship",
@@ -78,7 +78,7 @@ const Header = () => {
     <div className="header">
       <nav className={isScrolled ? "moved nav-bar" : "nav-bar"}>
         <div className="logo">
-          <img src="/logos/logo.png" alt="" className="nit-logo" />
+          <img src="/logos/logo2.png" alt="" className="nit-logo" />
         </div>
         <div className="links">
         {

@@ -18,6 +18,7 @@
 .table td, .table th {
   border: 1px solid rgb(139, 138, 138);
   padding: 8px;
+  text-align: center;
 }
 
 

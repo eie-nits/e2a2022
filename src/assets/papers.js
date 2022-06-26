@@ -63,15 +63,16 @@ export default [
     ]
   },
   {
-    heading: "MEMS & VLSI",
+    heading: "Material, MEMS & VLSI",
     items: [
-      "MEMS, Energy Harvesters",
-      "Nanotechnology, Renewable Energy, Nano Lithography Processes ",
-      "Solar Cells, Photonics",
-      "FinFet Technology",
-      "Memory Devices",
-      "VLSI Device Modelling",
-      "Advanced Materials, Characterization and Applications.",
+      "NEMS & MEMS, Nanotechnology",
+      "Solar Cells, Photonics & Energy",
+      "2D Materials, Organic Semiconductors & Flexible Electronics",
+      "Advanced Materials, Characterization and Applications",
+      "Device Simulation & Modelling",
+      "Memory Devices & Logic for Storage and Computing",
+      "FinFET Technology, VLSI Circuits & System Design",
+      "FPGA & Embedded System"
     ]
   },
   {

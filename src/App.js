@@ -22,7 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/" exact element={<Home/>} />
           <Route path="/call-for-papers" exact element={<CallForPapers />} />
-          <Route path="/comittee" exact element={<Committee />} />
+          <Route path="/committee" exact element={<Committee />} />
           <Route path="/contact-us" exact element={<ContactUs />} />
           <Route path="/important-dates" exact element={<ImportantDates />} />
           <Route path="/author-registration" exact element={<Registration />} />

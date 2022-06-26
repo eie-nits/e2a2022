@@ -36,7 +36,7 @@ const ContactUs = () => {
             <li className="member mt-4">
               <p>Dr. Lalu Seban</p>
               <p className="mt-1">Assistant Professor, E&I Dept., NIT Silchar</p>
-              <p className="mt-1">Phone: +91-8011-886745 </p>
+              <p className="mt-1">Phone: +91-8011886745 </p>
               {/* <p className="mt-1">Email: <a href="mailto:seban@ei.nits.ac.in" rel="noreferrer">seban@ei.nits.ac.in</a></p> */}
             </li>
             <li className="member mt-4">
