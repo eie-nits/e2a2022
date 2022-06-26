@@ -20,7 +20,7 @@ const Sponsorship = () => {
         <li>Logo recognition in the conference program.</li>
         <li>A promotional video of the sponsor will be webcasted for viewing in general online session of the Conference.</li>
         <li>Please contact us for any special needs.</li>
-        <li>The paper submissions must follow the Springer formatting guidelines.</li>
+        {/* <li>The paper submissions must follow the Springer formatting guidelines.</li> */}
       </ul>
       <p className="mtb-2">Early confirmation of your Sponsorship will ensure an even higher level of exposure.</p>
       <p>Please contact General Chair: Dr. Ranjay Hazra (email: <a href="mailto: e2a@nits.ac.in">e2a@nits.ac.in</a>) for more details.</p>

@@ -124,7 +124,7 @@ const Header = () => {
           16<sup>th</sup> - 18<sup>th</sup> Dec, <span className="red-text">2022</span>
         </div>
         <div className="organised-by">
-          Organised by <br /> Department Of Electronics and Instrumentation
+          Organised by <br /> Department of Electronics and Instrumentation
           Engineering
         </div>
         <div className="logo log-15x mt-2">

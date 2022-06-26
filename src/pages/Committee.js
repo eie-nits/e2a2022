@@ -26,7 +26,7 @@ const Committee = () => {
         <div className='list'>
           <h1 style={{ marginBottom: '-5px' }}>Honorary Chair</h1>
 
-          <ProfileCard img={"/images/Jagannath Sarangapani_Hon Chair.jpg"} name="Prof. Jagannathan Sarangapani," aff={"Missouri Institute of Science and Technology, USA"} style={{maxWidth: "350px"}} />
+          <ProfileCard img={"/images/Jagannath Sarangapani_Hon Chair.jpg"} name="Prof. Jagannathan Sarangapani," aff={"Missouri Institute of Science and Technology, USA"} style={{maxWidth: "350px"}} link="https://ece.mst.edu/faculty-directory/jagannathan-sarangapani/" />
         </div>
 
         <div className='list'>
@@ -43,19 +43,19 @@ const Committee = () => {
         </div>
         <div className='list'>
           <h1 style={{ marginBottom: '-5px' }}>Convenor</h1>
-          <ProfileCard img={"/images/mkb.jpg"} name="Dr. Manas Kumar Bera," aff="NIT Silchar" />
+          <ProfileCard img={"/images/mkb.jpg"} name="Dr. Manas Kumar Bera," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
         </div>
 
         <div className='list'>
           <h1>Organizing Chairs/Secretary</h1>
           <div className='mt-2' style={{display: "flex", justifyContent: 'space-evenly', flexWrap: "wrap", width: "100%"}}>
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/rd.jpg"} name="Dr. Rajdeep Dasgupta," aff="NIT Silchar" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/rd.jpg"} name="Dr. Rajdeep Dasgupta," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/skp.jpeg"} name="Dr. Shivendra Kumar Pandey," aff="NIT Silchar" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/skp.jpeg"} name="Dr. Shivendra Kumar Pandey," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/ls.jpg"} name="Dr. Lalu Seban," aff="NIT Silchar" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/ls.jpg"} name="Dr. Lalu Seban," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/vcp.jpg"} name="Dr. Vipin Chandra Pal," aff="NIT Silchar" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/vcp.jpg"} name="Dr. Vipin Chandra Pal," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
           </div>
         </div>
 

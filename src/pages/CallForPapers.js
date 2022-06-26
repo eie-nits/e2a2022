@@ -26,7 +26,7 @@ const CallForPapers = () => {
   return (
     <>
       {/* <Header /> */}
-      <div className="main-content" ref={container}>
+      <div className="main-content mb-2" ref={container}>
         <div className="paper-heading">
           <span className="heading-text">
             Call For <span className="red-text">Regular Papers</span>

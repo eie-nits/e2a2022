@@ -21,12 +21,52 @@
 .datetime > div > div > h4 {
   text-transform: uppercase;
 }
+.book-list {
+  display: flex;
+  justify-self: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.book-sidebar > p {
+  margin-left: 0 !important;
+}
+.book-sidebar > a {
+  color: #127CCC;
+  font-size: 14px;
+}
+p.text1 > a {
+  color: #127CCC;
+}
 @media (min-width: 768px) {
   .home-page {
     display: flex;
   }
   .about {
     flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  .datetime {
+    justify-content: center;
+    text-align: center;
+  }
+  .datetime > div > div {
+    justify-content: center;
+  }
+  .datetime > div > div > img {
+    margin-right: 5px;
+  }
+  .datetime h4 {
+    margin: 0
+  }
+  .datetime > div > p {
+    margin: 0
+  }
+}
+@media (min-width: 992px) {
+  .book-list {
+    flex-direction: row;
+    align-items: center;
   }
 }
 

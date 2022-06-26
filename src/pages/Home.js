@@ -17,9 +17,28 @@ const Home = () => {
         <div className="about">
           <h2 className="about-heading mb-1 mt-1">About The Conference</h2>
           <div className="home-about-content">
-            <p className="text1">Emerging Electronics and Automation (E2A) 2022 is the 2<sup>nd</sup> annual International Conference organized by the Department of Electronics and Instrumentation Engineering at NIT Silchar, Assam. E2A 2022 is scheduled to be held hybrid between 16th and 18th December 2022.</p>
+            <p className="text1 mb-1">Emerging Electronics and Automation (E2A) 2022 is the 2<sup>nd</sup> annual International Conference organized by the Department of Electronics and Instrumentation Engineering at NIT Silchar, Assam. E2A 2022 is scheduled to be in hybrid mode between 16th and 18th December 2022.</p>
+            <p className="text1">We are happy to share that first edition of E2A was successfully organized from 17th to 19th December 2021, and the accepted papers were indexed in <a href="https://link.springer.com/" target="_blank" rel="noreferrer">Springer LNEE</a>.</p>
 
-            <div className="mtb-2" />
+            <div className="mtb-4 book-list">
+              <img src="/images/book.jpg" alt="E2a book" style={{height: "400px"}} />
+              <div className="ml-4">
+                <p className="mb-1">Peter Han Joo Chong, Akhtar Kalam, Antonio Pascoal, Manas Kumar Bera</p>
+                <a href="https://www.springer.com/gp/book/978-981-19-4299-0?utm_medium=catalog&utm_source=sn-bks&utm_campaign=search_tool&utm_content=my_flyer" target="_blank" rel="noreferrer"style={{fontSize: "30px", color: "#127ccc"}}>Emerging Electronics and Automation</a>
+                <p className="mt-1" style={{fontSize: "24px", fontWeight: 400, color: "#444"}}>Select Proceedings of E2A 2021</p>
+                <ul className="ml-2 mt-2">
+                  <li style={{color: "#127ccc"}}>Constitutes proceedings of International Conference on Emerging Electronics and Automation</li>
+                  <li style={{color: "#127ccc"}}>Presents cutting edge technologies in automation and advances in the allied domain</li>
+                  <li style={{color: "#127ccc"}}>Helps to curve a way for the beginners in the area of automation and allied fields</li>
+                </ul>
+                <p className="mt-2">This book constitutes peer-reviewed proceedings of the International Conference on Emerging Electronics and Automation (E2A) 2021. The book presents new ideas,
+                research findings, and novel techniques in the fields of sensors and instrumentation,
+                automation and control, artificial intelligence, MEMS sensors, soft computing, signal
+                processing, and communication. It includes contributions received from both
+                academia and industry. The proceedings will be helpful for beginners as well as
+                advanced researchers in the area of automation and other allied fields</p>
+              </div>
+            </div>
 
             <p className="text1">This conference focuses on trending research and product outcomes in the domain of control and robotics, signal processing, communication systems, sensors and instrumentation, MEMS and VLSI, AI and soft computing. E2A 2022 will pave a common platform for the academicians, researchers, industrial players and budding research scholars to discuss their results, innovations, challenges encountered during research and concerns with peers and update their knowledge by interacting with leading researchers of respective domains. It offers a great opportunity for them to network together, present research progress and addresses new challenges. This conference promises to provide knowledge enriching keynote lectures to the participants by world-renowned researchers in the relevant thematic areas.</p>
           </div>
@@ -59,8 +78,34 @@ const Home = () => {
               <h4 className="ml-1">Previous Edition</h4>
             </div>
             <p>
-              <a className="e2a-link" target="__blank" href="https://e2a.nits.ac.in">e2a2021</a>
+              <a style={{color: "#127CCC"}} className="e2a-link" target="__blank" href="http://e2a.nits.ac.in">E2a2021</a>
             </p>
+          </div>
+          <CustomHR color="#626E75" large={true} />
+          <div className="mtb-2 book-sidebar">
+            <p>Edition No: 1</p>
+            <p>2023. X, 790 p.</p>
+            <p>Series</p>
+            <p>Lecture Notes in Electrical Engineering</p>
+          </div>
+          <CustomHR color="#626E75" large={true} />
+          <div className="mtb-2 book-sidebar">
+            <p>Printed Book</p>
+            <p>Hard cover</p>
+            <a href="https://www.springer.com/gp/book/978-981-19-4299-0?utm_medium=catalog&utm_source=sn-bks&utm_campaign=search_tool&utm_content=my_flyer" target="_blank" rel="noreferrer">ISBN 978-981-19-4299-0</a>
+            <p>ISBN 978-981-19-4299-0</p>
+            <p>299.99 € | £ 249.99 | $ 379.99</p>
+            <p>320.99 € (D) | 329.99 € (A) | CHF 354.00</p>
+          </div>
+          <CustomHR color="#626E75" large={true} />
+          <div className="mt-2 book-sidebar">
+            <p>eBook</p>
+            <a href="https://www.springer.com/gp/book/978-981-19-4300-3?utm_medium=catalog&utm_source=sn-bks&utm_campaign=search_tool&utm_content=my_flyer" target="_blank" rel="noreferrer">ISBN 978-981-19-4300-3</a>
+            <p>Soft cover</p>
+            <a href="https://www.springer.com/gp/book/978-981-19-4302-7?utm_medium=catalog&utm_source=sn-bks&utm_campaign=search_tool&utm_content=my_flyer" target="_blank" rel="noreferrer">ISBN 978-981-19-4302-7</a>
+            <p>MyCopy</p>
+            <a href="https://www.springer.com/gp/book/978-981-19-4301-0?utm_medium=catalog&utm_source=sn-bks&utm_campaign=search_tool&utm_content=my_flyer" target="_blank" rel="noreferrer">ISBN 978-981-19-4301-0</a>
+            <p>£ 39.99 | 39.99 € (D) | 39.99 € (A) | CHF 39.99</p>
           </div>
         </div>
     </section>
@@ -85,7 +130,9 @@ const Home = () => {
 
     <section className="keynote-speakers pt-4">
       <h3 className="heading_h3">Key Note Speakers</h3>
-      <p className="mt-2 mb-1">Here are our Key note Speakers</p>
+      <span className='red-text mb-2'>(To be updated soon...)</span>
+      {/* <p className="mt-2 mb-1">Here are our Key note Speakers</p> */}
+      <div className="mtb-2" />
       <CustomHR color="#777" />
       <div className="mb-3" />
       <div className="user-container pb-4">
@@ -100,7 +147,7 @@ const Home = () => {
             <ProfileCard key={i} {...props} />
           )
         })} */}
-        <span className='red-text'>To be updated soon...</span>
+        {/* <span className='red-text'>To be updated soon...</span> */}
       </div>
     </section>
   </>

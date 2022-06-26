@@ -63,7 +63,7 @@ export default [
     ]
   },
   {
-    heading: "Material, MEMS & VLSI",
+    heading: "MEMS & VLSI",
     items: [
       "NEMS & MEMS, Nanotechnology",
       "Solar Cells, Photonics & Energy",

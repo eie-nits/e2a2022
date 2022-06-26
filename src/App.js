@@ -13,6 +13,7 @@ import Program from "./pages/Program";
 import RegularPaperSubmission from "./pages/RegularPaperSubmission";
 import Sponsorship from "./pages/Sponsorship";
 import Schedule from "./pages/Schedule";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -31,7 +32,7 @@ const App = () => {
           <Route path="/sponsorship" exact element={<Sponsorship />} />
           <Route path="/program-schedule" exact element={<Schedule />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );
